@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>ФОК - Услуги</title>
+</head>
+<body>
+
+
+<main>
+    <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="../assets/images/logo.svg" alt="ФОК Спартак" class="logo-img">
+        </a>
+        
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="trainers.html">Тренеры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        
+        <div class="nav-cta">
+            <div class="phone">
+                +7 (831) 716-90-24
+            </div>
+            <a href="#contacts" class="btn">Записаться</a>
+            
+            <div class="theme-toggle-container">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <img src="../assets/images/luna.svg" alt="">
+                </button>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <img src="../assets/images/icons8-меню.svg" alt="" , width="28px">
+            </button>
+        </div>
+    </div>
+</header>
+    <section class="page-hero">
+    <div class="container">
+        <div class="page-hero-content">
+            <h1>Расписание занятий</h1>
+            <p>Актуальное расписание групповых и индивидуальных занятий. Выбирайте удобное время, записывайтесь онлайн и достигайте своих спортивных целей с профессионалами.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span>/</span>
+                <span>Расписание</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    <section class="days-nav">
+        <div class="container">
+            <div class="days-tabs">
+                <button class="day-tab active" data-day="monday">Понедельник</button>
+                <button class="day-tab" data-day="tuesday">Вторник</button>
+                <button class="day-tab" data-day="wednesday">Среда</button>
+                <button class="day-tab" data-day="thursday">Четверг</button>
+                <button class="day-tab" data-day="friday">Пятница</button>
+                <button class="day-tab" data-day="saturday">Суббота</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="schedule-main">
+        <div class="container">
+            
+            <div class="schedule-day active" id="monday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Понедельник</h3>
+                        <div class="date">18 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">7:00 - 8:00</td>
+                                <td>Утренняя йога</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">9:00 - 10:00</td>
+                                <td>Аквааэробика</td>
+                                <td class="trainer">Мария Козлова</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">12:00 - 13:00</td>
+                                <td>Силовой тренинг</td>
+                                <td class="trainer">Дмитрий Петров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:00 - 19:00</td>
+                                <td>Пилатес</td>
+                                <td class="trainer">Елена Соколова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:30 - 20:30</td>
+                                <td>Кроссфит</td>
+                                <td class="trainer">Игорь Сидоров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-advanced">Прод.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="schedule-day" id="tuesday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Вторник</h3>
+                        <div class="date">19 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">7:00 - 8:00</td>
+                                <td>Функциональный тренинг</td>
+                                <td class="trainer">Дмитрий Петров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00 - 11:00</td>
+                                <td>Плавание</td>
+                                <td class="trainer">Мария Козлова</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">17:00 - 18:00</td>
+                                <td>Стретчинг</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:00 - 20:00</td>
+                                <td>Силовой тренинг</td>
+                                <td class="trainer">Дмитрий Петров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-advanced">Прод.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="schedule-day" id="wednesday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Среда</h3>
+                        <div class="date">20 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">8:00 - 9:00</td>
+                                <td>Йога для начинающих</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00 - 12:00</td>
+                                <td>Аквааэробика 50+</td>
+                                <td class="trainer">Мария Козлова</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">16:00 - 17:00</td>
+                                <td>Детская секция плавания</td>
+                                <td class="trainer">Мария Козлова</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:30 - 19:30</td>
+                                <td>Кроссфит</td>
+                                <td class="trainer">Игорь Сидоров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-advanced">Прод.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="schedule-day" id="thursday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Четверг</h3>
+                        <div class="date">21 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">9:00 - 10:00</td>
+                                <td>Виньяса йога</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">12:00 - 13:00</td>
+                                <td>Силовой тренинг (женская группа)</td>
+                                <td class="trainer">Елена Соколова</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">18:00 - 19:00</td>
+                                <td>Йога для спины</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:30 - 20:30</td>
+                                <td>Тяжелая атлетика</td>
+                                <td class="trainer">Дмитрий Петров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-advanced">Прод.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="schedule-day" id="friday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Пятница</h3>
+                        <div class="date">22 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">7:00 - 8:00</td>
+                                <td>Утренний бег</td>
+                                <td class="trainer">Игорь Сидоров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">10:00 - 11:00</td>
+                                <td>Свободное плавание</td>
+                                <td class="trainer">Сергей Смирнов</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">17:00 - 18:00</td>
+                                <td>Тай-бо</td>
+                                <td class="trainer">Игорь Сидоров</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-intermediate">Сред.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">19:00 - 20:00</td>
+                                <td>Аквааэробика</td>
+                                <td class="trainer">Мария Козлова</td>
+                                <td>Бассейн</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="schedule-day" id="saturday">
+                <div class="schedule-table">
+                    <div class="day-header">
+                        <h3>Суббота</h3>
+                        <div class="date">23 декабря 2023</div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Занятие</th>
+                                <th>Тренер</th>
+                                <th>Зал</th>
+                                <th>Уровень</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">9:00 - 10:00</td>
+                                <td>Детская гимнастика (4-6 лет)</td>
+                                <td class="trainer">Ольга Новикова</td>
+                                <td>Зал 3</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">11:00 - 12:00</td>
+                                <td>Йога для всей семьи</td>
+                                <td class="trainer">Анна Иванова</td>
+                                <td>Зал 2</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">14:00 - 15:00</td>
+                                <td>Детский фитнес (7-10 лет)</td>
+                                <td class="trainer">Ольга Новикова</td>
+                                <td>Зал 3</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time">16:00 - 17:00</td>
+                                <td>Zumba</td>
+                                <td class="trainer">Елена Соколова</td>
+                                <td>Зал 1</td>
+                                <td class="level">
+                                    <span class="level-badge level-beginner">Нач.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>ФОК "Спартак"</h3>
+                <p>Современный физкультурно-оздоровительный комплекс с полным спектром услуг для поддержания здоровья и физической формы.</p>
+                <div class="footer-social">
+                    
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Быстрые ссылки</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"> Главная</a></li>
+                    <li><a href="#services"> Услуги</a></li>
+                    <li><a href="#trainers"> Тренеры</a></li>
+                    <li><a href="#schedule"> Расписание</a></li>
+                    <li><a href="#contacts"> Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Услуги</h3>
+                <ul class="footer-links">
+                    <li><a href="trenz.html"> Тренажерный зал</a></li>
+                    <li><a href="sport.html"> Спортивный зал</a></li>
+                    <li><a href="fitnes.html"> Фитнес зал</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><img class="i" src="../assets/images/adres.svg" alt=""> р.п. Тумботино, ул. Пролетарская, д. 14а</a></li>
+                    <li><a href="tel:+74951234567"><img class="i" src="../assets/images/phone.svg" alt=""> +7 (831) 716-90-24</a></li>
+                    <li><a href="mailto:info@fok-spartak.ru"><img class="i" src="../assets/images/email.svg" alt=""> spartak_tumb@mail.ru</a></li>
+                    <li><img class="i" src="../assets/images/time2.svg" alt=""> Пн-Пт: 6:00 - 23:00</li>
+                    <li><img class="i" src="../assets/images/time2.svg" alt=""> Сб-Вс: 8:00 - 22:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+   
+    
+    <script>
+        // Переключение темы
+        document.getElementById('themeToggle').addEventListener('click', function() {
+            const body = document.body;
+            const icon = this.querySelector('i');
+            
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                icon.className = 'fas fa-sun';
+            } else {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                icon.className = 'fas fa-moon';
+            }
+        });
+
+        // Переключение дней
+        document.querySelectorAll('.day-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Убираем активный класс у всех вкладок
+                document.querySelectorAll('.day-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Добавляем активный класс текущей вкладке
+                this.classList.add('active');
+                
+                // Скрываем все дни
+                document.querySelectorAll('.schedule-day').forEach(day => {
+                    day.classList.remove('active');
+                });
+                
+                // Показываем выбранный день
+                const dayId = this.getAttribute('data-day');
+                document.getElementById(dayId).classList.add('active');
+            });
+        });
+         
+        // Мобильное меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+    </script>
+</main>
+
+
+
+</body>
+</html>
